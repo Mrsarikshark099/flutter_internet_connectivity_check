@@ -23,11 +23,11 @@ class _HomePageState extends State<HomePage> {
         title: Text("Internet Connectivity"),
         backgroundColor: Colors.redAccent,
       ),
-      body: pageUI(),
+      body: pageUi(),
     );
   }
 
-  Widget pageUI() {
+  Widget pageUi() {
     return Consumer<ConnectivityProvider>(
       builder: (consumerContext, model, child) {
         if (model.isOnline != null) {
